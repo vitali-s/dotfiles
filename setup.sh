@@ -26,8 +26,15 @@ install_app () {
     ls /Applications/ | grep -i "$1" > /dev/null || brew cask install $2
 }
 
+# Install and configure git
+source git/setup.sh
+
 # Install and configure vim
 source vim/setup.sh
 
 # Install and cofigure Visual Studio Code
 source vscode/setup.sh
+
+# Install and configure Zsh
+source zsh/setup.sh
+
