@@ -26,6 +26,7 @@ zstyle :omz:plugins:ssh-agent identities "~/.ssh/github-vitali.shcharbin"
 
 eval "$(ssh-agent -s)"
 ssh-add -A 2>/dev/null;
+ssh-add ~/.ssh/*.private
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
