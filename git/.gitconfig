@@ -21,9 +21,10 @@
 [apply]
 	whitespace = nowarn
 [diff]
-	tool = vimdiff
-[difftool]
-	prompt = false
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --diff $LOCAL $REMOTE
+    prompt = false
 [alias]
     # Diff
 	d = difftool

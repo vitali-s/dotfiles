@@ -1,5 +1,7 @@
 {
     "editor.renderWhitespace": "all",
     "editor.wordWrap": true,
-    "extensions.autoUpdate": true
+    "extensions.autoUpdate": true,
+    "workbench.colorTheme": "Braver's Solarized Light",
+    "editor.renderControlCharacters": false
 }

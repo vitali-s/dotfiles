@@ -8,6 +8,7 @@ set visualbell                  " No sounds or error
 set autoread                    " Reload files changed outside
 set hidden
 syntax on                       " Highlight syntax
+set clipboard=unnamed
 
 " Turn off swap files
 set noswapfile
@@ -29,7 +30,7 @@ set omnifunc=syntaxcomplete#Complete
 set ruler
 set rulerformat=%=%h%m%r%w\ %(%c%V%),%l/%L\ %P
 set scrolloff=5
-set shiftwidth=8
+set shiftwidth=4
 set showmatch
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set tabstop=4
