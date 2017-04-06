@@ -16,8 +16,6 @@
     changed = green
     untracked = cyan
 [user]
-	name = Vitali Shcharbin
-	email = vitali.shcharbin@gmail.com
 [apply]
 	whitespace = nowarn
 [diff]
@@ -44,3 +42,24 @@
     undo = reset --soft HEAD~1
     reset = reset --hard HEAD~1
 	commit = commit -S
+
+    # Log
+    log-commits = log --oneline --graph --decorate
+    log-files = log --oneline --graph --decorate --name-status
+    log-plain = log --pretty=format:'%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s'
+[user]
+	email = vitali.shcharbin@gmail.com
+	name = Vitali Shcharbin
+	signingkey = 4E469124C76AF3F8
+[commit]
+	gpgsign = true
+	template = /Users/vitalishcharbin/.stCommitMsg
+[core]
+	pager = cat
+	excludesfile = /Users/vitalishcharbin/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

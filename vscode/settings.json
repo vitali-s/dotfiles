@@ -3,5 +3,9 @@
     "editor.wordWrap": true,
     "extensions.autoUpdate": true,
     "workbench.colorTheme": "Braver's Solarized Light",
-    "editor.renderControlCharacters": false
+    "editor.renderControlCharacters": false,
+    "window.zoomLevel": 0,
+
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 10000
 }

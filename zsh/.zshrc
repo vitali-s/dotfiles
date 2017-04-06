@@ -42,3 +42,28 @@ ssh-add ~/.ssh/*.private
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias qfind="find . -name " # qfind:    Quickly search for file
+
+# List subfolders with appropriate branches
+alias git-branches='printf "\n" && find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && basename '{}' && git branch && echo "----------------------------"  && cd .." \; && printf "\n"'
+
+function git_branches_change {
+    cd $1
+
+    git checkout $2
+
+    cd ..
+}
+
+alias git-branches-change="git_branches_change common $1 && git_branches_change server $1 && git_branches_change syncp-database $1"
+
+alias git-stash='printf "\n" && find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && basename '{}' && git stash list && echo "----------------------------"  && cd .." \; && printf "\n"'
+
+alias git-ss='printf "\n" && find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && basename '{}' && git ss && echo "----------------------------"  && cd .." \; && printf "\n"'
+
+alias git-update='printf "\n" && find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && basename '{}' && git pull --rebase && echo "----------------------------"  && cd .." \; && printf "\n"'
+
+alias git-up='printf "\n" && find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && basename '{}' &&
+git stash -u && git pull --rebase && git stash pop && cd .." \; && printf "----------------------------\n"'
+
