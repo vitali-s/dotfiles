@@ -1,11 +1,19 @@
 {
     "editor.renderWhitespace": "all",
-    "editor.wordWrap": true,
+    "editor.wordWrap": "on",
     "extensions.autoUpdate": true,
-    "workbench.colorTheme": "Braver's Solarized Light",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#067b9c",
+        "editor.selectionHighlightBackground": "#067b9c",
+        "editor.inactiveSelectionBackground":  "#067b9c"
+    },
     "editor.renderControlCharacters": false,
     "window.zoomLevel": 0,
 
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 10000
+    "files.autoSaveDelay": 10000,
+
+    "terminal.integrated.fontFamily": "Meslo LG L for Powerline",
+    "terminal.integrated.fontSize": "12pt"
 }

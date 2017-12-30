@@ -20,6 +20,14 @@ brew install jq
 brew install openssl
 brew install node
 brew install wget
+brew install gpg
+brew install gnupg
+brew install python3
+brew install vim
+brew install zsh
+brew install zsh-completions
+brew install groovysdk
+brew install node
 
 install_app () {
     printf "Install application '$1'\n"
@@ -38,3 +46,9 @@ source vscode/setup.sh
 # Install and configure Zsh
 source zsh/setup.sh
 
+brew cask install gimp
+brew cask install gpgtools
+brew cask install java
+brew cask install vlc
+brew cask install virtualbox
+brew cask install visual-studio-code

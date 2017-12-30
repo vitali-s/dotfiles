@@ -50,16 +50,19 @@
 [user]
 	email = vitali.shcharbin@gmail.com
 	name = Vitali Shcharbin
-	signingkey = 4E469124C76AF3F8
+	signingkey = 6F0DD9A4186DECA8
 [commit]
-	gpgsign = true
-	template = /Users/vitalishcharbin/.stCommitMsg
+    gpgsign = true
+    template = /Users/vitalishcharbin/.stCommitMsg
 [core]
 	pager = cat
 	excludesfile = /Users/vitalishcharbin/.gitignore_global
+	autocrlf = input
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[gpg]
+	program = /usr/local/bin/gpg

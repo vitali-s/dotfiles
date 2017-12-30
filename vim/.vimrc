@@ -59,7 +59,7 @@ filetype plugin indent on
 
 " Change color scheme
 syntax enable
-set background=light
+set background=dark
 set t_Co=256
 let g:solarized_termcolors=256
 colorscheme solarized

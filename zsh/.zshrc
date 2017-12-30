@@ -48,6 +48,9 @@ alias qfind="find . -name " # qfind:    Quickly search for file
 # List subfolders with appropriate branches
 alias git-branches='printf "\n" && find . -maxdepth 1 -type d \( ! -name . \) -exec bash -c "cd '{}' && basename '{}' && git branch && echo "----------------------------"  && cd .." \; && printf "\n"'
 
+# AWS autom complete
+source /usr/local/bin/aws_zsh_completer.sh
+
 function git_branches_change {
     cd $1
 
